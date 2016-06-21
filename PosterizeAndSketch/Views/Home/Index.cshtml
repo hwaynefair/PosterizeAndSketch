@@ -1,0 +1,139 @@
+﻿ 
+<link href="~/Content/Recipes.css" rel="stylesheet" />
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script src="~/Scripts/bootbox.min.js"></script>
+<script src="~/Scripts/POSTERIZE.js"></script>
+ 
+<div id="wrapper">
+
+    <style>
+        #wrapper {
+            margin: 0 auto;
+            top: 50px;
+            width: 100%;
+            z-index: 100;
+            /*box-shadow: 10px 10px 5px rgba(14, 12, 12, 0.78);
+            border-radius: 5px;
+            background-color: rgba(255,255,255,0.6);*/
+            text-align: center;
+        }
+
+        #loading-pane {
+            position: relative;
+            top: 25%;
+            min-width: 360px;
+        }
+
+        .tiles {
+            display: inline-block;
+            border-radius: 5px;
+            color: rebeccapurple;
+            font-size: small;
+            text-align: left;
+        }
+
+ 
+
+        a {
+            color: #5b17ca;
+        }
+
+        .modal-content {
+            margin: 0 auto !important;
+        }
+    </style>
+ 
+            <article class="recipe tiles" style="max-width:50%;margin:5px" id="">
+                @*<a href="@Url.Action("InstructionWizard", "Home", new { img = ".." + @item.ThumbFileLocation, Id = @item.Id });">*@
+                    <h3 style="margin:3px;">Hello</h3>
+
+                    <div style="float:left;margin-right:1px;width:40%;padding:5px">
+
+                        <label>My Painting</label>
+                        @*<label>@item.Id</label>*@
+
+                    </div>
+
+                    <p>
+                        <div class="panel">
+
+                            <div class="paintPic">
+                                <canvas id="mainImageCanvas"></canvas>
+                            </div>
+
+                        </div>
+
+                    </p>
+
+
+                    <button class="btn-primary toggle-menu">Button</button>
+
+                    @*<i class="fa fa-pencil"></i></a>*@  
+              
+                @*<i class="fa fa-trash" data-idr=""</i>*@
+
+
+            </article>
+ <p>
+
+ </p>
+
+    <script>
+        var icvimgmg = document.createElement("img");
+        var mainCanvasContext = document.getElementById('mainImageCanvas').getContext('2d');
+
+    $(document).ready(function () {
+
+
+
+        var img = new Image();
+
+        img.src = '/Images/Pink-Carnations-in-Blue-Ball-Mason-Jar1.jpg';
+
+                    $(img).load(function () {
+
+                        var mainCanvasContext = document.getElementById('mainImageCanvas').getContext('2d');
+                        icvimgmg.src = img.src;
+                       
+
+                        //  posterizeIt(document.getElementById('mainImageCanvas'), img);
+                        drawImage(mainCanvasContext);
+
+
+
+                        posterizeIt(document.getElementById('mainImageCanvas'), img);
+
+                    });
+    });
+
+    function drawImage(cntxt) {
+
+
+        var imgx = new Image();
+
+        var expandWidth = 0;
+
+        imgx = icvimgmg;
+ 
+        mainCanvasContext.canvas.height = imgx.height;
+        mainCanvasContext.canvas.width = imgx.width;
+
+        mainCanvasContext.drawImage(imgx, 0, 0, imgx.width, imgx.height)
+
+
+
+
+        var getCanvas = mainCanvasContext.canvas;
+
+
+    };
+
+
+    </script>
+
+</div>
+
+
+

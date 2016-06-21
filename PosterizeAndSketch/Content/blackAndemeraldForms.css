@@ -1,0 +1,45 @@
+﻿form{
+    background-color:#363537 !important;
+    
+    font-size:large;
+    margin:0 auto !important;
+        max-width:70%;
+
+  /*top: 50%;
+  left: 50%;*/
+  color:white;
+
+}
+
+.specialForm{
+ border-radius: 5px !important;-webkit-box-shadow: .5px .5px 11px 5px #444 !important;
+}
+input{
+	/*background: #93e2d5 !important;
+   color:white*/
+}
+
+.btn{
+    font-size:large;
+  
+   color:white
+}
+
+a.actionlinkToButton
+{
+     display: block;
+     width: 150px;
+     height: 150px;
+     text-indent: -9999px; /* hides the link text */
+   	background: #93e2d5 !important;
+           font-size:large;
+ 
+}
+label{
+       color:white
+}
+#example-advanced-form-p-0{
+       	background: #93e2d5 !important;
+}
+ 
+ 

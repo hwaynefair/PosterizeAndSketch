@@ -1,0 +1,93 @@
+﻿        #drawingForm{
+width:100%;top:10%;margin:0 auto !important;
+        }
+ 
+    /*.loaderx {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('../Images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+    }*/
+ button, btn{
+     width:100%;
+ 
+ 
+ }
+
+  btn-group{
+      width:50%
+  
+ 
+ }
+ 
+        .btn{
+            width:50%;
+            margin-bottom:1px;
+            min-width:250px;
+ 
+   
+        }
+        label{
+               width:100%;
+        }
+        .panel{
+    margin:0 auto !important;
+        }
+ .btn.active, .btn:active {
+    /*background-color: #ff0000;*/
+}
+ .floater{
+
+     float:left;
+ width:100%
+ 
+ }
+
+ input[name="option"] { 
+
+     width:100%
+ }
+ 
+ .panel-group .panel {
+    overflow:visible;
+}
+
+
+#mainDivModal{
+    overflow-y: initial !important
+}
+#mainDivModal{
+    height:700px;
+    overflow-y: auto;
+}
+
+.paltte{
+     width:100%
+}
+
+ 
+    #mainDivModal {
+      width:50%;top:10%;margin:0 auto !important;
+    
+    }
+
+
+
+@media (max-width: 540px) {
+#mainDivModal {
+ width:100%;top:0%;margin:0 auto !important;
+
+        }
+    
+}
+
+.thisli{
+    width:100%
+}
+ 
+#sidebarToggle{
+    min-width:0;
+}

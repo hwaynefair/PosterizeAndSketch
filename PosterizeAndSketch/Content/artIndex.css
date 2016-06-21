@@ -1,0 +1,234 @@
+﻿
+/*#wrapper {
+ -webkit-transform: translate3d(0, 0, 0);
+  animation-duration: 1s;
+  animation-name: none
+}*/
+
+
+
+ 
+/*@-webkit-keyframes bounceIn {
+  from { top:-300px; }
+  to   { top: 110px; }
+}*/
+
+ 
+/*@keyframes example {
+  from { top:-100px; }
+  to   { top: 100px; }
+}*/
+
+
+
+ 
+@media (max-width: 540px) {
+#dragmex  {
+ width:100%;
+    border:none;
+    z-index:10002;
+     float:none !important;
+        }
+    #myCanvasWindow {
+        box-shadow: none;
+ 
+    }
+
+
+#myCanvas{
+     position:relative;
+        height:25px;
+    width:100%;
+
+        
+    /*-webkit-box-shadow: inset 5px 5px 5px red;
+  border-radius: 40px;*/
+}
+#toolbarx{
+    width:100% !important;
+    float:none !important;
+    z-index:10002;
+}
+
+}
+ 
+@media (min-width: 541px) {
+    #toolbar{
+ 
+    float:left !important;
+    z-index:10002;
+    top:30%
+}
+    #myCanvasWindow{
+/*box-shadow: inset 1px 1px 1px rgba(10, 0, 0, 0.74);
+border:inset;border-width:7px;
+background-color:transparent;*/
+height:50px;width:150px;z-index:1000;
+ 
+top:10px;
+ margin:0 auto;
+ margin-bottom:15px;
+ 
+}
+   /* iPad and bigger */
+ /*#myCanvas{
+    width:155px; 
+    height:155px;
+   position:absolute;margin-left:10px;margin-top:10px;
+}*/
+   #dragme {
+cursor:move;
+ position:fixed;
+       width:215px;
+ right:10%;
+     top:10%;
+     z-index:10002;
+    /*border:outset 10px #d3d3d3;*/
+    /*background-color:rgba(255,255,255,0.6);*/
+    /*background-color:#363537;*/
+        background-color:white;
+    /*color:rgba(9, 1, 2, 0.83);*/
+            font-size: 12pt;
+            /*border-radius: 25px;*/
+            padding: 20px;
+            -webkit-box-shadow: 1px 1px 1px rgba(10, 0, 0, 0.74);
+            -moz-box-shadow: 1px 1px 1px rgba(10, 0, 0, 0.74);
+            box-shadow: 1px 1px 1px rgba(10, 0, 0, 0.74);
+            color:white;
+        }
+
+
+#toolbar {
+cursor:move;
+       width:215px;
+    position:fixed;
+  
+    /*border:outset 10px #d3d3d3;*/
+    /*background-color:rgba(255,255,255,0.6);*/
+    /*background-color:#363537;*/
+        background-color:white;
+    /*color:rgba(9, 1, 2, 0.83);*/
+            font-size: 12pt;
+            /*border-radius: 25px;*/
+            padding: 20px;
+            -webkit-box-shadow: 1px 1px 1px rgba(10, 0, 0, 0.74);
+            -moz-box-shadow: 1px 1px 1px rgba(10, 0, 0, 0.74);
+            box-shadow: 1px 1px 1px rgba(10, 0, 0, 0.74);
+            color:white;
+        }
+
+
+}
+
+
+ /*@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+    #dragme {
+    
+    float:right;
+    }
+    
+}
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:landscape) {
+      #dragme {
+    
+    float:left;
+    } 
+      #mainImageCanvas{
+          height:10%
+
+      }
+}*/
+
+        /*#mainImageCanvas {
+            -webkit-box-shadow: 10px 10px 10px rgba(10, 0, 0, 0.74);
+            -moz-box-shadow: 10px 10px 10px rgba(10, 0, 0, 0.74);
+            box-shadow: 10px 10px 10px rgba(10, 0, 0, 0.74);
+        }*/
+
+
+        .meter {
+            height: 40px; /* Can be anything */
+            position: relative;
+            /*background: rgba(24, 4, 4, 0.90);*/
+            background:rgb(216, 216, 216);
+            /*-moz-border-radius: 25px;
+            -webkit-border-radius: 25px;
+            border-radius: 25px;*/
+            padding-top: 1px;
+            box-shadow: inset 1px 1px 1px rgba(0,0,0,0.7);
+           
+    
+        }
+
+            .meter > span {
+                display: block;
+                height: 100% !important;
+                /*border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;*/
+                /*background-color: rgb(255, 0, 219);*/
+                /*background-image: linear-gradient( center bottom, #8AC007 37%, teal 69% );*/
+                box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), inset 0 -1px 6px rgba(0,0,0,0.4);
+                position: relative;
+                overflow: hidden;
+ 
+
+            }
+ 
+
+
+
+    .tint {
+
+    }
+ 
+            /*background-color: #269;
+            background-image: linear-gradient(white 2px, transparent 2px), linear-gradient(90deg, white 2px, transparent 2px), linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+            background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+            background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;*/
+            /*background-color: #026873;
+    background-size: 13px 13px, 29px 29px, 37px 37px, 53px 53px;
+    background-image: -webkit-linear-gradient(0, rgba(255,255,255,.07) 50%, transparent 50%),
+                      -webkit-linear-gradient(0, rgba(255,255,255,.13) 50%, transparent 50%),
+                      -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.17) 50%),
+                      -webkit-linear-gradient(0, transparent 50%, rgba(255,255,255,.19) 50%);
+    background-image: -moz-linear-gradient(0, rgba(255,255,255,.07) 50%, transparent 50%),
+                      -moz-linear-gradient(0, rgba(255,255,255,.13) 50%, transparent 50%),
+                      -moz-linear-gradient(0, transparent 50%, rgba(255,255,255,.17) 50%),
+                      -moz-linear-gradient(0, transparent 50%, rgba(255,255,255,.19) 50%);
+    background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
+                      linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
+                      linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
+                      linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
+    -pie-background: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%) 0 0 / 13px,
+                     linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%) 0 0 / 29px,
+                     linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%) 0 0 / 37px,
+                     linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%) 0 0 / 53px,
+                     #026873;
+    behavior: url(/pie/PIE.htc);
+        }*/
+ 
+ 
+@media screen\0 {
+#dragme, #toolbar {
+ 
+    /*border:10px solid #d3d3d3;*/
+    background-color:rgba(255,255,255,0.3);
+
+        }
+
+}
+
+
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)  {
+
+#myCarousel{
+ 
+}
+
+
+}

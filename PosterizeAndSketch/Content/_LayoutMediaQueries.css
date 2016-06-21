@@ -1,0 +1,42 @@
+﻿
+#lblSteps {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #222222 !important;
+    color: #8e7baa !important;
+    font-size: 1em !important;
+    z-index: 2000;
+}
+
+#switches{
+   color: mediumpurple !important;
+}
+/*//SMART PHONES*/
+@media only screen and (max-width: 768px) {
+
+    #lblSteps {
+    width: 75%;
+position: fixed;
+left: 50%;
+margin-left: -37.5%;
+     
+        bottom: 0px;
+        top:auto !important;
+  
+    }
+    
+    
+}
+
+
+/*//NOT PHONES*/
+@media only screen and (min-width: 768px) {
+    #lblSteps {
+        right:200px;
+        top: 5px;
+ 
+        position: fixed !important;
+        border-radius: 5px !important;
+        box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.7);
+    }
+}
